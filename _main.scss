@@ -2,7 +2,7 @@
 
 .first-section {
   min-height: 738px;
-  background: url('../assets/img/bg_city.jpg') center no-repeat;
+  background: url('../assets/img/bg_city.jpg') center/cover no-repeat;
 }
 
 .first-section__container {
@@ -402,7 +402,7 @@
 .consultation-section {
   padding: 80px 0 90px 0;
   height: 398px;
-  background: url('../assets/img/bg_city_2.jpg') center no-repeat;
+  background: url('../assets/img/bg_city_2.jpg') center/cover no-repeat;
 }
 
 .consultation-form__title {
@@ -465,4 +465,16 @@
   text-transform: uppercase;
 
   color: $optional_buttons_bc_color;
+}
+
+/* logo-section */
+
+.logo-section {
+  padding: 70px 0 36px 0;
+
+  text-align: center;
+}
+
+.logo-section__logo {
+  display: inline-block;
 }

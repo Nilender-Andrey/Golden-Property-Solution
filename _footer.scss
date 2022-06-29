@@ -1,0 +1,18 @@
+.footer {
+  padding: 15px 0;
+  height: 64px;
+  background: #e6e5ea26;
+}
+.footer-text {
+  font-family: 'Century Gothic';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: $footer_main_fonts_color;
+}
+
+.footer_link {
+  color: $link_color;
+}

@@ -196,11 +196,29 @@ table {
   color: #000000;
 }
 
-/*@import './footer'; */
+.footer {
+  padding: 15px 0;
+  height: 64px;
+  background: rgba(230, 229, 234, 0.1490196078);
+}
+
+.footer-text {
+  font-family: "Century Gothic";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.footer_link {
+  color: #f8b500;
+}
+
 /* first-section */
 .first-section {
   min-height: 738px;
-  background: url("../assets/img/bg_city.jpg") center no-repeat;
+  background: url("../assets/img/bg_city.jpg") center/cover no-repeat;
 }
 
 .first-section__container {
@@ -559,7 +577,7 @@ table {
 .consultation-section {
   padding: 80px 0 90px 0;
   height: 398px;
-  background: url("../assets/img/bg_city_2.jpg") center no-repeat;
+  background: url("../assets/img/bg_city_2.jpg") center/cover no-repeat;
 }
 
 .consultation-form__title {
@@ -626,6 +644,16 @@ table {
   text-align: center;
   text-transform: uppercase;
   color: #24173d;
+}
+
+/* logo-section */
+.logo-section {
+  padding: 70px 0 36px 0;
+  text-align: center;
+}
+
+.logo-section__logo {
+  display: inline-block;
 }
 
 * {
