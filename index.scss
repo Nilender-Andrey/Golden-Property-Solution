@@ -1,0 +1,36 @@
+@import './fonts';
+@import './reset';
+
+@import './header';
+/*@import './footer'; */
+@import './main';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: $main_fonts_color;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 206px;
+  height: 80px;
+  background: url('../assets/icon/logo.svg') center no-repeat;
+}
+
+.button {
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

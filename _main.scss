@@ -1,0 +1,60 @@
+/* first-section */
+
+.first-section {
+  min-height: 738px;
+  background: url('../assets/img/bg_city.jpg') center no-repeat;
+}
+
+.first-section__container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 68px 0 209px 0;
+}
+
+.first-section__info {
+  max-width: 655px;
+  padding: 24px 0 0 0;
+}
+
+.first-section__main-title {
+  font-weight: 800;
+  font-size: 67px;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: $second_fonts_color;
+
+  span {
+    font-weight: 300;
+    font-size: 29px;
+    line-height: 70px;
+  }
+}
+
+.first-section__decor-line {
+  width: 462px;
+  height: 2px;
+  margin: 30px auto;
+
+  background: url('../assets/icon/decor-line_big.png') center no-repeat;
+}
+
+.first-section__second-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+
+  color: $second_fonts_color;
+}
+
+.first-section__text {
+}
+
+.first-section__form {
+  width: 890px;
+  height: 461px;
+
+  background-color: $decor_color;
+  box-shadow: 10px 25px 45px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
