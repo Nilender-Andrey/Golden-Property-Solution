@@ -492,7 +492,7 @@ table {
 
 /* data-section */
 .data-section {
-  padding: 130px 0 0 25px;
+  padding: 130px 0 88px 25px;
 }
 
 .container.data-section__container {
@@ -516,7 +516,7 @@ table {
 .data-list {
   flex: 1 1 52%;
   display: flex;
-  padding: 50px;
+  padding: 56px 50px 56px 50px;
   background-color: #ffc633;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px 0px 0px 30px;
@@ -553,6 +553,79 @@ table {
 }
 .data-item__index span {
   font-size: 30px;
+}
+
+/*  consultation-section */
+.consultation-section {
+  padding: 80px 0 90px 0;
+  height: 398px;
+  background: url("../assets/img/bg_city_2.jpg") center no-repeat;
+}
+
+.consultation-form__title {
+  padding: 0 0 18px 0;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.consultation-form__text {
+  margin-bottom: 62px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.consultation-form__input-wrap {
+  display: flex;
+  gap: 20px;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.consultation-form__input {
+  width: 100%;
+  max-width: 385px;
+  height: 57px;
+  padding: 0 0 0 18px;
+}
+.consultation-form__input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #383838;
+}
+.consultation-form__input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #383838;
+}
+.consultation-form__input::placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #383838;
+}
+
+.consultation-form__button {
+  width: 250px;
+  height: 57px;
+  border-radius: 5px;
+  background-color: #ffc633;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #24173d;
 }
 
 * {
