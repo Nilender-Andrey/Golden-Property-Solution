@@ -5,6 +5,10 @@
 /*@import './footer'; */
 @import './main';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -29,6 +33,8 @@ body {
   outline: none;
 
   cursor: pointer;
+
+  font-family: 'Montserrat';
 
   &:hover {
     opacity: 0.8;
