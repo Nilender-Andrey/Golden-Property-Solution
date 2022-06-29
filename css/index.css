@@ -347,7 +347,7 @@ table {
 
 /* benefits-section */
 .benefits-section {
-  margin: 31px 0 40px 0;
+  margin: 31px 0 0 0;
   background: url("../assets/icon/frame.png") center no-repeat;
 }
 
@@ -421,6 +421,73 @@ table {
 }
 .benefits-section__item.benefits-section__item_credit::before {
   background: url("../assets/icon/credit.svg") center/contain no-repeat;
+}
+
+/* property-section */
+.property-section__title {
+  margin-bottom: 59px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+  color: #24173d;
+}
+
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1px;
+}
+
+.property-item {
+  flex: 1 1 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  height: 416px;
+  padding: 0 0 30px 0;
+}
+
+.property-item_studios {
+  background: url("../assets/img/studios.jpg") center/cover no-repeat;
+}
+
+.property-item_apartments {
+  background: url("../assets/img/apartments.jpg") center/cover no-repeat;
+}
+
+.property-item_penthouses {
+  background: url("../assets/img/penthouses.jpg") center/cover no-repeat;
+}
+
+.property-item_townhouse {
+  background: url("../assets/img/townhouse.jpg") center/cover no-repeat;
+}
+
+.property-item_villas {
+  background: url("../assets/img/villas.jpg") center/cover no-repeat;
+}
+
+.property-item__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.property-item__button {
+  width: 258px;
+  height: 46px;
+  background: #fac86e;
+  box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #24173d;
 }
 
 * {
