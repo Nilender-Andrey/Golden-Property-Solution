@@ -345,6 +345,84 @@ table {
   color: #ffffff;
 }
 
+/* benefits-section */
+.benefits-section {
+  margin: 31px 0 40px 0;
+  background: url("../assets/icon/frame.png") center no-repeat;
+}
+
+.benefits-section__title {
+  position: relative;
+  top: 10px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  color: #24173d;
+}
+
+.benefits-section__container {
+  height: 463px;
+  padding-top: 83px;
+}
+
+.benefits-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 230px;
+}
+
+.benefits-section__item {
+  position: relative;
+  padding-left: 120px;
+  margin-right: 20px;
+  width: 100%;
+  max-width: 520px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #24173d;
+}
+.benefits-section__item:nth-child(3n) {
+  margin-right: 0;
+}
+.benefits-section__item::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 0;
+  width: 80px;
+  height: 80px;
+}
+.benefits-section__item.benefits-section__item_bitcoin::before {
+  background: url("../assets/icon/bitcoin.svg") center/contain no-repeat;
+}
+.benefits-section__item.benefits-section__item_installment-plan::before {
+  background: url("../assets/icon/installment_plan.svg") center/contain no-repeat;
+}
+.benefits-section__item.benefits-section__item_control::before {
+  background: url("../assets/icon/control.svg") center/contain no-repeat;
+}
+.benefits-section__item.benefits-section__item_income {
+  padding-left: 109px;
+}
+.benefits-section__item.benefits-section__item_income::before {
+  width: 68px;
+  background: url("../assets/icon/income.svg") center/contain no-repeat;
+}
+.benefits-section__item.benefits-section__item_visa {
+  padding-left: 105px;
+}
+.benefits-section__item.benefits-section__item_visa::before {
+  width: 69px;
+  background: url("../assets/icon/visa.svg") center/contain no-repeat;
+}
+.benefits-section__item.benefits-section__item_credit::before {
+  background: url("../assets/icon/credit.svg") center/contain no-repeat;
+}
+
 * {
   box-sizing: border-box;
 }
