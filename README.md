@@ -1,2 +1,0 @@
-# Golden-Property-Solution
-website
