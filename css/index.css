@@ -145,6 +145,32 @@ table {
 /* decor */
 /* buttons */
 /* link */
+/* workpieces */
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 206px;
+  height: 80px;
+  background: url("../assets/icon/logo.svg") center no-repeat;
+}
+
+/* .button {
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  font-family: 'Montserrat';
+
+  &:hover {
+    opacity: 0.8;
+  }
+} */
+/* mixin */
 .header {
   padding: 20px 0 57px;
 }
@@ -163,9 +189,9 @@ table {
 
 .header__title {
   max-width: 380px;
+  font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -174,7 +200,7 @@ table {
   margin-right: 51px;
   font-weight: 600;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 30px;
 }
 .header__tel::before {
   content: "";
@@ -186,14 +212,26 @@ table {
 }
 
 .header__button {
+  position: relative;
   width: 250px;
   height: 50px;
   background: #ffc633;
   border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+  transition: 0.25s linear;
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 700;
   color: #000000;
+}
+.header__button:hover {
+  opacity: 0.8;
+}
+.header__button:active {
+  transform: scale(0.98);
 }
 
 .footer {
@@ -269,6 +307,8 @@ table {
 }
 .first-section__text span {
   font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
   color: #ffc633;
 }
 .first-section__text:last-child {
@@ -351,21 +391,35 @@ table {
 }
 
 .first-form__button {
+  position: relative;
   width: 355px;
   height: 65px;
   background: #24173d;
-  box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
   border-radius: 43px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+  transition: 0.25s linear;
+  box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
   color: #ffffff;
 }
+.first-form__button:hover {
+  opacity: 0.8;
+}
+.first-form__button:active {
+  transform: scale(0.98);
+}
 
 /* benefits-section */
 .benefits-section {
-  margin: 31px 0 0 0;
+  width: 100%;
+  max-width: 1780px;
+  margin: 31px auto 0;
   background: url("../assets/icon/frame.png") center no-repeat;
 }
 
@@ -388,7 +442,8 @@ table {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  height: 230px;
+  justify-content: space-between;
+  min-height: 230px;
 }
 
 .benefits-section__item {
@@ -498,14 +553,26 @@ table {
 }
 
 .property-item__button {
+  position: relative;
   width: 258px;
   height: 46px;
   background: #fac86e;
-  box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
   border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+  transition: 0.25s linear;
+  box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
   font-weight: 600;
   font-size: 16px;
   color: #24173d;
+}
+.property-item__button:hover {
+  opacity: 0.8;
+}
+.property-item__button:active {
+  transform: scale(0.98);
 }
 
 /* data-section */
@@ -513,7 +580,7 @@ table {
   padding: 130px 0 88px 25px;
 }
 
-.container.data-section__container {
+.data-section__container {
   display: flex;
   align-items: center;
   max-width: 1651px;
@@ -521,19 +588,19 @@ table {
 }
 
 .data-section__title {
-  flex: 1 1 50%;
+  flex: 1;
   padding: 15px 0 15px 31px;
+  border-left: 5px solid #24173d;
   font-weight: 900;
   font-size: 44px;
   line-height: 77px;
   text-transform: uppercase;
   color: #24173d;
-  border-left: 5px solid #24173d;
 }
 
 .data-list {
-  flex: 1 1 52%;
   display: flex;
+  width: 841px;
   padding: 56px 50px 56px 50px;
   background-color: #ffc633;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -612,38 +679,50 @@ table {
   padding: 0 0 0 18px;
 }
 .consultation-form__input::-moz-placeholder {
-  font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  font-family: "Montserrat";
   color: #383838;
 }
 .consultation-form__input:-ms-input-placeholder {
-  font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  font-family: "Montserrat";
   color: #383838;
 }
 .consultation-form__input::placeholder {
-  font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  font-family: "Montserrat";
   color: #383838;
 }
 
 .consultation-form__button {
+  position: relative;
   width: 250px;
   height: 57px;
+  background: #ffc633;
   border-radius: 5px;
-  background-color: #ffc633;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+  transition: 0.25s linear;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
   color: #24173d;
+}
+.consultation-form__button:hover {
+  opacity: 0.8;
+}
+.consultation-form__button:active {
+  transform: scale(0.98);
 }
 
 /* logo-section */
@@ -665,26 +744,4 @@ body {
   font-weight: 600;
   font-size: 16px;
   color: #24173d;
-}
-
-.container {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-.logo {
-  width: 206px;
-  height: 80px;
-  background: url("../assets/icon/logo.svg") center no-repeat;
-}
-
-.button {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-family: "Montserrat";
-}
-.button:hover {
-  opacity: 0.8;
 }

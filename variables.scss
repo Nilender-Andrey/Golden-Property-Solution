@@ -14,3 +14,51 @@ $optional_buttons_bc_color: #24173d;
 /* link */
 
 $link_color: #f8b500;
+
+/* workpieces */
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 206px;
+  height: 80px;
+  background: url('../assets/icon/logo.svg') center no-repeat;
+}
+
+@mixin button($w, $h, $bg, $br) {
+  position: relative;
+
+  width: $w;
+  height: $h;
+
+  background: $bg;
+  border-radius: $br;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  font-family: 'Montserrat';
+
+  transition: 0.25s linear;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+/* mixin */
+
+@mixin text($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}

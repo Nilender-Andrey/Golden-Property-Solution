@@ -18,16 +18,13 @@
 }
 
 .first-section__main-title {
-  font-weight: 800;
-  font-size: 67px;
-  line-height: 70px;
+  @include text(800, 67px, 70px);
+
   text-transform: uppercase;
   color: $second_fonts_color;
 
   span {
-    font-weight: 300;
-    font-size: 29px;
-    line-height: 70px;
+    @include text(300, 29px, 70px);
   }
 }
 
@@ -42,23 +39,18 @@
 .first-section__second-title {
   margin-bottom: 30px;
 
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 60px;
-
+  @include text(700, 56px, 60px);
   color: $second_fonts_color;
 }
 
 .first-section__text {
   margin-bottom: 8px;
 
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
+  @include text(400, 24px, 33px);
   color: $second_fonts_color;
 
   span {
-    font-weight: 700;
+    @include text(700, 24px, 33px);
     color: $decor_color;
   }
 
@@ -80,9 +72,7 @@
 .first-form__title {
   margin-bottom: 8px;
 
-  font-weight: 800;
-  font-size: 87px;
-  line-height: 44px;
+  @include text(800, 87px, 44px);
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -98,13 +88,10 @@
 .first-form__text {
   margin-bottom: 30px;
 
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
+  @include text(600, 20px, 24px);
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: $second_fonts_color;
 }
 
@@ -140,16 +127,10 @@
 }
 
 .first-form__button {
-  width: 355px;
-  height: 65px;
-
-  background: #24173d;
+  @include button(355px, 65px, $optional_buttons_bc_color, 43px);
   box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
-  border-radius: 43px;
 
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
+  @include text(600, 18px, 22px);
   text-transform: uppercase;
   color: $second_fonts_color;
 }
@@ -157,7 +138,10 @@
 /* benefits-section */
 
 .benefits-section {
-  margin: 31px 0 0 0;
+  width: 100%;
+  max-width: 1780px;
+
+  margin: 31px auto 0;
   background: url('../assets/icon/frame.png') center no-repeat;
 }
 
@@ -165,9 +149,7 @@
   position: relative;
   top: 10px;
 
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 60px;
+  @include text(700, 44px, 60px);
   text-align: center;
   color: $main_fonts_color;
 }
@@ -182,8 +164,9 @@
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+  justify-content: space-between;
 
-  height: 230px;
+  min-height: 230px;
 }
 
 .benefits-section__item {
@@ -194,11 +177,8 @@
   width: 100%;
   max-width: 520px;
 
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
+  @include text(300, 24px, 29px);
   letter-spacing: 0.05em;
-
   color: $main_fonts_color;
 
   &:nth-child(3n) {
@@ -251,9 +231,7 @@
 .property-section__title {
   margin-bottom: 59px;
 
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 54px;
+  @include text(700, 44px, 54px);
   text-align: center;
   color: $main_fonts_color;
 }
@@ -294,22 +272,14 @@
 }
 
 .property-item__title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-
+  @include text(600, 24px, 29px);
   letter-spacing: 0.05em;
-
   color: $second_fonts_color;
 }
 
 .property-item__button {
-  width: 258px;
-  height: 46px;
-
-  background: $main_buttons_bc_color;
+  @include button(258px, 46px, $main_buttons_bc_color, 30px);
   box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
-  border-radius: 30px;
 
   font-weight: 600;
   font-size: 16px;
@@ -322,7 +292,7 @@
   padding: 130px 0 88px 25px;
 }
 
-.container.data-section__container {
+.data-section__container {
   display: flex;
   align-items: center;
 
@@ -331,24 +301,20 @@
 }
 
 .data-section__title {
-  flex: 1 1 50%;
+  flex: 1;
 
   padding: 15px 0 15px 31px;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 77px;
-  text-transform: uppercase;
-
-  color: $main_fonts_color;
-
   border-left: 5px solid $main_fonts_color;
+
+  @include text(900, 44px, 77px);
+  text-transform: uppercase;
+  color: $main_fonts_color;
 }
 
 .data-list {
-  flex: 1 1 52%;
   display: flex;
-
+  width: 841px;
   padding: 56px 50px 56px 50px;
 
   background-color: $decor_color;
@@ -408,9 +374,7 @@
 .consultation-form__title {
   padding: 0 0 18px 0;
 
-  font-weight: 800;
-  font-size: 44px;
-  line-height: 54px;
+  @include text(800, 44px, 54px);
   text-align: center;
   color: $second_fonts_color;
 }
@@ -418,11 +382,8 @@
 .consultation-form__text {
   margin-bottom: 62px;
 
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 37px;
+  @include text(400, 30px, 37px);
   text-align: center;
-
   color: $second_fonts_color;
 }
 
@@ -441,29 +402,18 @@
   padding: 0 0 0 18px;
 
   &::placeholder {
+    @include text(400, 14px, 17px);
     font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-
     color: #383838;
   }
 }
 
 .consultation-form__button {
-  width: 250px;
-  height: 57px;
-  border-radius: 5px;
+  @include button(250px, 57px, $second_buttons_bc_color, 5px);
 
-  background-color: $second_buttons_bc_color;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-
+  @include text(700, 18px, 22px);
   text-align: center;
   text-transform: uppercase;
-
   color: $optional_buttons_bc_color;
 }
 
